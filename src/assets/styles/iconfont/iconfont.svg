@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="home_shousuo_h_icon" unicode="&#58952;" d="M866.8672 638.976H157.184c-30.208 0-54.6304 22.8864-54.6304 51.2 0 28.2624 24.4736 51.2 54.6304 51.2H866.816c30.208 0 54.6304-22.9376 54.6304-51.2 0-28.3136-24.4736-51.2-54.6304-51.2z m0-307.2H157.184c-30.208 0-54.6304 22.8864-54.6304 51.2 0 28.2624 24.4736 51.2 54.6304 51.2H866.816c30.208 0 54.6304-22.9376 54.6304-51.2 0-28.3136-24.4736-51.2-54.6304-51.2z m0-307.2H157.184c-30.208 0-54.6304 22.8864-54.6304 51.2 0 28.2624 24.4736 51.2 54.6304 51.2H866.816c30.208 0 54.6304-22.9376 54.6304-51.2 0-28.3136-24.4736-51.2-54.6304-51.2z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>
