@@ -1,17 +1,17 @@
 <template>
-    <div class="login-box">
-        welcome login
+    <div class="register-box">
+        welcome Register
     </div>
 </template>
 
 <script>
     export default {
-        name: "Login"
+        name: "Register"
     }
 </script>
 
 <style scoped>
-    .login-box{
+    .register-box{
         font-size: 30px;
         text-align: center;
         line-height: 100px;
