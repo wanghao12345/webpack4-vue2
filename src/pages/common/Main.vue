@@ -49,5 +49,4 @@
         background: #f7f7f7;
         flex-grow: 1;
     }
-
 </style>

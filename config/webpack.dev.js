@@ -15,7 +15,8 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 // 配置上线路径
 var website = {
-    publicPath: "http://localhost:8888/"
+    // publicPath: "http://localhost:8888/"
+    publicPath: ""
 }
 // 配置绝对路径
 var resolve = function(dir){
@@ -45,7 +46,6 @@ module.exports = {
             'styles': resolve('src/assets/styles')
         }
     },
-
     // 模块：例如解读CSS，图片如何转换，压缩
     module: {
         rules: [

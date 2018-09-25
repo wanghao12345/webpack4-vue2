@@ -1,13 +1,13 @@
 <template>
     <div id="home" class="home-box">
-        Home
+        HomeDashboard2
     </div>
 </template>
 
 <script>
 
     export default {
-        name: "Home"
+        name: "HomeDashboard2"
     }
 </script>
 

@@ -14,7 +14,9 @@
                     <div class="item-title" @click="selectMenuItem(index)">{{item.menuName}}<span class="iconfont">&#xe81c;</span></div>
                     <ul>
                         <li v-for="sunItem in item.sunMenuName">
-                            {{sunItem}}
+                            <router-link :to="sunItem.link">
+                                {{sunItem.name}}
+                            </router-link>
                         </li>
                     </ul>
                 </div>
@@ -32,11 +34,37 @@
                 menuData:[{
                     'isActive': false,
                     'menuName': 'Home',
-                    'sunMenuName':['home1', 'home2', 'home3']
+                    'sunMenuName': [
+                        {
+                            'name': 'Dashbord1',
+                            'link': '/home/homeDashboard1'
+                        },
+                        {
+                            'name': 'Dashbord2',
+                            'link': '/home/homeDashboard2'
+                        },
+                        {
+                            'name': 'Dashbord3',
+                            'link': '/home/homeDashboard3'
+                        }
+                    ]
                 },{
                     'isActive': false,
-                    'menuName': 'Home',
-                    'sunMenuName':['home1', 'home2', 'home3']
+                    'menuName': 'Forms',
+                    'sunMenuName':[
+                        {
+                            'name': 'General Form',
+                            'link': '/from/fromGeneral'
+                        },
+                        {
+                            'name': 'Advanced Components',
+                            'link': '/from/fromAdvanced'
+                        },
+                        {
+                            'name': 'Form Validation',
+                            'link': '/from/fromValidation'
+                        }
+                    ]
                 }],
                 isActive: {
                     menu1: false,
@@ -123,9 +151,13 @@
     .nav-list .menu-item ul{
         height: 0;
         overflow: hidden;
+        max-height: 20px;
+        -webkit-transition: max-height 2s;
+        transition: max-height 2s;
     }
     .nav-list .nav-active ul{
         height: auto;
+        max-height:200px;
     }
     .nav-list .menu-item ul li{
         height: 30px;
@@ -133,6 +165,14 @@
         color: #efebeb;
         box-sizing: border-box;
         padding-left: 30px;
+        cursor: pointer;
+    }
+    .nav-list .menu-item ul li a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: #efebeb;
         cursor: pointer;
     }
 
