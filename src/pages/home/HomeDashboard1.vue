@@ -4,7 +4,9 @@
             <div class="table-top">
                 Network Activities
                 <small>Graph title sub-title</small>
-                <input type="text" class="layui-input" id="laydate">
+                <div class="calendar-box">
+                    <vue-calendar></vue-calendar>
+                </div>
             </div>
             <div class="table-bottom">
                 <div class="table-line">
@@ -23,10 +25,12 @@
 
 <script>
     import NetworkActivities from './HomeDashboard1/NetworkActivities'
+    import VueCalendar from '@/pages/common/calendar/VueCalendar'
     export default {
         name: "HomeDashboard1",
         components:{
-            NetworkActivities
+            NetworkActivities,
+            VueCalendar
         },
         data () {
             return {
@@ -83,15 +87,21 @@
     .layui-input{
         background: #fff;
         cursor: pointer;
-        border: 1px solid #ccc;
+        border: 1px solid #e6e6e6;
         float: right;
         margin: 9px;
-        width: 280px;
-        height: 28px;
+        width: 180px;
+        height: 35px;
         margin-right: 20px;
         box-sizing: border-box;
         padding: 0 5px;
         color: #a29e9e;
+        text-align: right;
+        border-radius: 4px;
     }
-
+    .calendar-box{
+        width: 300px;
+        height: 100%;
+        float: right;
+    }
 </style>
